@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = ".next"  # Netlify’s Next adapter serves from here
+
+[functions]
+  node_bundler = "esbuild"
+
+# The Next.js Runtime is applied automatically, but keeping this line is fine.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----------------------- Design tokens ----------------------- */
+:root {
+  --glass: rgba(255, 255, 255, 0.7);
+  --ring: 0 0 0 1px rgba(20, 83, 255, .15);
+}
+
+/* ----------------------- Base tweaks ------------------------- */
+@layer base {
+  html, body {
+    @apply bg-gray-50 text-gray-900;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    @apply tracking-tight text-gray-900;
+  }
+
+  /* Nice default card look for <section class="card"> if you use it */
+  .card {
+    @apply rounded-2xl border bg-white p-6 shadow-sm;
+  }
+
+  /* Improve form element focus across the app */
+  input, select, textarea {
+    @apply focus:outline-none focus:ring-2 focus:ring-brand/40 focus:border-brand/40;
+  }
+
+  /* Reduce default form control rounded corners a bit for a tighter look */
+  input, select, textarea, .btn-primary, .btn-outline {
+    @apply rounded-lg;
+  }
+}
+
+/* ----------------------- Components -------------------------- */
+@layer components {
+  /* hover utility for cards */
+  .card-hover { transition: transform .2s ease, box-shadow .2s ease; }
+  .card-hover:hover { transform: translateY(-1px); box-shadow: 0 16px 40px rgba(20,83,255,.08); }
+  .glass { background: var(--glass); backdrop-filter: blur(10px); }
+
+  /* badges */
+  .badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium; }
+  .badge-muted { @apply badge bg-gray-100 text-gray-700; }
+  .badge-brand { @apply badge bg-blue-100 text-blue-700; }
+  .badge-green { @apply badge bg-green-50 text-green-700; }
+  .badge-amber { @apply badge bg-amber-50 text-amber-800; }
+  .badge-slate { @apply badge bg-slate-100 text-slate-700; }
+
+  /* buttons & shadows */
+  .btn-primary { @apply inline-flex items-center justify-center bg-brand px-4 py-2 text-white font-medium shadow-soft hover:bg-blue-700 transition; }
+  .btn-outline { @apply inline-flex items-center justify-center border px-4 py-2 font-medium hover:bg-gray-50 transition; }
+  .btn-ghost   { @apply inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm hover:bg-gray-100; }
+  .shadow-soft { box-shadow: 0 8px 24px rgba(21,94,239,.05); }
+
+  /* nav links */
+  .nav-link { @apply text-sm text-gray-700 hover:text-gray-900 hover:underline underline-offset-4; }
+
+  /* chips (used in application section nav) */
+  .chip        { @apply inline-flex items-center gap-1 rounded-full border bg-white/70 px-3 py-1.5 text-xs text-gray-700 hover:bg-white; }
+  .chip-active { @apply border-brand/30 bg-brand/10 text-brand; }
+
+  /* sticky section header bar used inside form sections */
+  .section-header {
+    @apply sticky top-14 z-10 flex items-center justify-between gap-3 border-b bg-white/85 px-6 py-3 backdrop-blur;
+  }
+
+  /* subtle progress bar container (used in footers/headers) */
+  .progress-outer { @apply h-2 w-full overflow-hidden rounded-full bg-gray-100; }
+  .progress-inner { @apply h-full bg-brand transition-all; }
+}
+
+/* ----------------------- Utilities --------------------------- */
+@layer utilities {
+  /* thin divider gradient to use under headers if desired */
+  .header-gradient { @apply h-0.5 w-full bg-gradient-to-r from-transparent via-brand/20 to-transparent; }
+}

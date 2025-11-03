@@ -1,0 +1,28 @@
+{
+  "standard": [
+    {
+      "id": "r1",
+      "title": "Acceptance Report",
+      "description": "Recipients and acceptance statuses"
+    },
+    {
+      "id": "r2",
+      "title": "Activity Report",
+      "description": "Applications by status and timeframe"
+    }
+  ],
+  "kpis": [
+    {
+      "label": "Applications Started",
+      "value": 1240
+    },
+    {
+      "label": "Applications Submitted",
+      "value": 872
+    },
+    {
+      "label": "Documents Approved",
+      "value": 1630
+    }
+  ]
+}

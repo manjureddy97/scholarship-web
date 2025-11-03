@@ -1,0 +1,20 @@
+[
+    {
+        "id": "n1",
+        "type": "info",
+        "title": "Transcript tip",
+        "message": "Upload a PDF with your name, coursework, final grades, and cumulative GPA."
+    },
+    {
+        "id": "n2",
+        "type": "alert",
+        "title": "Action required",
+        "message": "First-Gen Scholars 2025: Please complete the essay section to submit."
+    },
+    {
+        "id": "n3",
+        "type": "success",
+        "title": "Submission received",
+        "message": "We’ve received your STEM Excellence 2025 application."
+    }
+]

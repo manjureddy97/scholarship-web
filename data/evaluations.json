@@ -1,0 +1,18 @@
+[
+  {
+    "id": "e1",
+    "name": "Alex Kim",
+    "academics": 88,
+    "service": 80,
+    "extracurricular": 75,
+    "work": 90
+  },
+  {
+    "id": "e2",
+    "name": "Priya Patel",
+    "academics": 92,
+    "service": 85,
+    "extracurricular": 78,
+    "work": 70
+  }
+]
