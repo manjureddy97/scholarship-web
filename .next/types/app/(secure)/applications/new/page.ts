@@ -1,4 +1,4 @@
-// File: /Users/manjureddy/Desktop/scholarship-app/app/(secure)/applications/new/page.tsx
+// File: C:\Users\Prash\Axiom Projects\scholarship-web\app\(secure)\applications\new\page.tsx
 import * as entry from '../../../../../../app/(secure)/applications/new/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

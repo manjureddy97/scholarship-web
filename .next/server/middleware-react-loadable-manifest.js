@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST="{\"components/forms/OCRSection.tsx -> pdfjs-dist/build/pdf\":{\"id\":\"components/forms/OCRSection.tsx -> pdfjs-dist/build/pdf\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_pdfjs-dist_build_pdf_mjs.js\"]}}"
+self.__REACT_LOADABLE_MANIFEST="{\"components\\\\forms\\\\OCRSection.tsx -> pdfjs-dist/legacy/build/pdf\":{\"id\":\"components\\\\forms\\\\OCRSection.tsx -> pdfjs-dist/legacy/build/pdf\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_pdfjs-dist_legacy_build_pdf_mjs.js\"]}}"
